@@ -20,7 +20,14 @@ go build -o bcrypt-benchmark ./cmd/benchmark
 
 This will produce a `bcrypt-benchmark` executable in your current directory.
 
-## How to Use
+### Cross compiling for arm64
+
+If you need to cross-compiles the utility for the ARM64 architecture on Linux systems from a e.g. x86, use the following:
+
+```
+GOOS=linux GOARCH=arm64 go build -o bcryptbenchmark.arm64
+```
+
 
 Run the benchmark tool from your terminal:
 
